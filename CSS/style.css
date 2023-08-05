@@ -143,6 +143,17 @@ h1, h2, h3, h4, h5, h6 {
 .list li a:hover {
     color: var(--primary-color) !important;
 }
+/* Inner page grid container */
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+    grid-row: 1 / span 3;
+}
 
 /* Navigation */
 #main-nav {
@@ -283,4 +294,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
 }
 
-#main-footer .footer-container input[type='submit']
+#main-footer .footer-container input[type='submit'] {
+    width: 90%;
+}
